@@ -1,0 +1,302 @@
+<?xml version="1.0" ?>
+<robot name="Untitled" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find Untitled_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find Untitled_description)/urdf/Untitled.trans" />
+<xacro:include filename="$(find Untitled_description)/urdf/Untitled.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.4240359231871652 0.691999994218356 0.30726005718939287" rpy="0 0 0"/>
+    <mass value="61.08266957617942"/>
+    <inertia ixx="6.824852" iyy="8.492586" izz="3.973393" ixy="-0.0" iyz="-0.0" ixz="-1.934453"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RealSense_1">
+  <inertial>
+    <origin xyz="-0.00019957066713605087 -1.1102230246251565e-16 0.06592185228454595" rpy="0 0 0"/>
+    <mass value="1.4144706758788057"/>
+    <inertia ixx="0.002392" iyy="0.001913" izz="0.000713" ixy="-0.0" iyz="0.0" ixz="5e-06"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.64499 -0.692 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RealSense_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.64499 -0.692 -1.345" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RealSense_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MancalD_1">
+  <inertial>
+    <origin xyz="0.475 -1.1102230246251565e-16 -0.14500000000000002" rpy="0 0 0"/>
+    <mass value="5.2124"/>
+    <inertia ixx="0.075504" iyy="0.00139" izz="0.075504" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.09 -0.692 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/MancalD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.09 -0.692 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/MancalD_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="MancalT_1">
+  <inertial>
+    <origin xyz="0.625 1.1102230246251565e-16 -0.14500000000000002" rpy="0 0 0"/>
+    <mass value="5.2124"/>
+    <inertia ixx="0.075504" iyy="0.00139" izz="0.075504" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0.5 -0.692 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/MancalT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0.5 -0.692 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/MancalT_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Lidar_1">
+  <inertial>
+    <origin xyz="0.5949999999999994 -3.3306690738754696e-16 -0.11346300000000009" rpy="0 0 0"/>
+    <mass value="0.7250481685219863"/>
+    <inertia ixx="0.000257" iyy="0.000257" izz="0.000444" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.145 -0.692 -0.389963" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.145 -0.692 -0.389963" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/Lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="Suporte_Lidar_1">
+  <inertial>
+    <origin xyz="0.63 2.220446049250313e-16 -0.010000000000000009" rpy="0 0 0"/>
+    <mass value="5.07738"/>
+    <inertia ixx="0.007109" iyy="0.006136" izz="0.011213" ixy="0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.09 -0.692 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/Suporte_Lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.09 -0.692 -0.25" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/Suporte_Lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="IMU2_1">
+  <inertial>
+    <origin xyz="8.940696738513054e-09 3.60608110039351e-09 0.0014999999999999736" rpy="0 0 0"/>
+    <mass value="0.019428749999999984"/>
+    <inertia ixx="1e-06" iyy="2e-06" izz="3e-06" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.35 -0.692 -0.126" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/IMU2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.35 -0.692 -0.126" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/IMU2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RodaDianteiraEsquerda_1">
+  <inertial>
+    <origin xyz="-1.1102230246251565e-16 0.04149999999999965 -5.551115123125783e-17" rpy="0 0 0"/>
+    <mass value="3.789055264540564"/>
+    <inertia ixx="0.016976" iyy="0.029602" izz="0.016976" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.565 -0.8995 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaDianteiraEsquerda_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.565 -0.8995 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaDianteiraEsquerda_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RodaTraseiraEsquerda_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-16 0.04149999999999998 -4.163336342344337e-17" rpy="0 0 0"/>
+    <mass value="3.789055264540563"/>
+    <inertia ixx="0.016976" iyy="0.029602" izz="0.016976" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.125 -0.8995 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaTraseiraEsquerda_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.125 -0.8995 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaTraseiraEsquerda_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RodaTraseiraDireita_1">
+  <inertial>
+    <origin xyz="-1.3877787807814457e-16 -0.04150000000000015 -4.163336342344337e-17" rpy="0 0 0"/>
+    <mass value="3.789055264540566"/>
+    <inertia ixx="0.016976" iyy="0.029602" izz="0.016976" ixy="-0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.125 -0.4845 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaTraseiraDireita_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.125 -0.4845 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaTraseiraDireita_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="RodaDianteiraDireita_1">
+  <inertial>
+    <origin xyz="-1.1102230246251565e-16 -0.04150000000000009 -4.163336342344337e-17" rpy="0 0 0"/>
+    <mass value="3.789055264540567"/>
+    <inertia ixx="0.016976" iyy="0.029602" izz="0.016976" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.565 -0.4845 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaDianteiraDireita_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.565 -0.4845 -0.125" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://Untitled_description/meshes/RodaDianteiraDireita_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid20" type="fixed">
+  <origin xyz="0.64499 0.692 1.345" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="RealSense_1"/>
+</joint>
+
+<joint name="Rigid21" type="fixed">
+  <origin xyz="0.09 0.692 0.25" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="MancalD_1"/>
+</joint>
+
+<joint name="Rigid22" type="fixed">
+  <origin xyz="-0.5 0.692 0.25" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="MancalT_1"/>
+</joint>
+
+<joint name="Rigid23" type="fixed">
+  <origin xyz="0.055 0.0 0.139963" rpy="0 0 0"/>
+  <parent link="Suporte_Lidar_1"/>
+  <child link="Lidar_1"/>
+</joint>
+
+<joint name="Rigid24" type="fixed">
+  <origin xyz="0.09 0.692 0.25" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="Suporte_Lidar_1"/>
+</joint>
+
+<joint name="Rigid25" type="fixed">
+  <origin xyz="0.35 0.692 0.126" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="IMU2_1"/>
+</joint>
+
+<joint name="Rev26" type="continuous">
+  <origin xyz="0.475 0.2075 -0.125" rpy="0 0 0"/>
+  <parent link="MancalD_1"/>
+  <child link="RodaDianteiraEsquerda_1"/>
+  <axis xyz="-0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rev27" type="continuous">
+  <origin xyz="0.625 0.2075 -0.125" rpy="0 0 0"/>
+  <parent link="MancalT_1"/>
+  <child link="RodaTraseiraEsquerda_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="Rev28" type="continuous">
+  <origin xyz="0.625 -0.2075 -0.125" rpy="0 0 0"/>
+  <parent link="MancalT_1"/>
+  <child link="RodaTraseiraDireita_1"/>
+  <axis xyz="-0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="Rev29" type="continuous">
+  <origin xyz="0.475 -0.2075 -0.125" rpy="0 0 0"/>
+  <parent link="MancalD_1"/>
+  <child link="RodaDianteiraDireita_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+</robot>
